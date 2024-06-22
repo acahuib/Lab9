@@ -59,14 +59,13 @@ button:hover {
   cursor: pointer;
 }
 
-.letter-button:hover {
-  background-color: #007bff;
-  color: #fff;
-}
 /* Estilos para la caja de letras */
 .letter-box {
   margin-top: 10px;
   text-align: center; /* Centrar los botones horizontalmente */
+  display: flex; /* Utilizar flexbox */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
+  justify-content: center; /* Centrar los elementos horizontalmente */
 }
 
 /* Estilos para los botones de letras */
@@ -78,6 +77,10 @@ button:hover {
   background-color: #fff;
   color: #007bff;
   cursor: pointer;
-  display: inline-block; /* Mostrar en una fila horizontal */
+}
+
+.letter-button:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 
