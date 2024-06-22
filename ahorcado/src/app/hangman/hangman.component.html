@@ -1,1 +1,25 @@
-<p>hangman works!</p>
+<div class="container">
+  <h1>Ahorcado</h1>
+  <p>Palabra: {{ palabraOculta }}</p>
+  <p>Intentos: {{ intentos }}</p>
+  <p>Letras erróneas: {{ letrasErroneas.join(', ') }}</p>
+
+  <div class="letras">
+    <button *ngFor="let letra of 'abcdefghijklmnopqrstuvwxyz'.split('')"
+            (click)="verificar(letra)"
+            [disabled]="juegoTerminado || letrasErroneas.includes(letra) || palabraOculta.includes(letra)">
+      {{ letra }}
+    </button>
+  </div>
+
+  <div *ngIf="gano">
+    <p>¡Felicidades! ¡Has ganado!</p>
+  </div>
+
+  <div *ngIf="juegoTerminado && !gano">
+    <p>Lo siento, has perdido. La palabra era: {{ palabra }}</p>
+  </div>
+
+  <button (click)="resetJuego()">Reiniciar juego</button>
+</div>
+
