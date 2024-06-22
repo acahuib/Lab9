@@ -15,5 +15,21 @@ export class HangmanComponent implements OnInit {
   	letrasErroneas: string[] = [];
   	juegoTerminado: boolean = false;
   	gano: boolean = false;
+constructor() {
+    this.nuevaPalabra();
+  }
+
+ngOnInit(): void {
+  }
+
+nuevaPalabra() {
+    this.palabra = this.palabras[Math.floor(Math.random() * this.palabras.length)];
+    this.palabraOculta = '_ '.repeat(this.palabra.length).trim();
+    this.intentos = 0;
+    this.letrasErroneas = [];
+    this.juegoTerminado = false;
+    this.gano = false;
+  }
+
 
 }
