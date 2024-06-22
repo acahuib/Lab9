@@ -5,10 +5,13 @@
     <p>Palabra a adivinar: {{ getDisplayedWord() }}</p>
     <p>Letras adivinadas: {{ guessedLetters }}</p>
     <p>Intentos restantes: {{ attemptsLeft }}</p>
-    <div *ngFor="let letter of alphabet">
-      <button (click)="guessLetter(letter)" [disabled]="isLetterGuessed(letter) || isGameWon() || isGameLost()">
-        {{ letter }}
-      </button>
+    <!-- Agregar los botones de letras aquí -->
+    <div class="letter-box">
+      <div *ngFor="let letter of alphabet">
+        <button class="letter-button" (click)="guessLetter(letter)" [disabled]="isLetterGuessed(letter) || isGameWon() || isGameLost()">
+          {{ letter }}
+        </button>
+      </div>
     </div>
   </div>
   <!-- Mensaje de victoria -->

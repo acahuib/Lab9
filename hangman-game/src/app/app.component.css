@@ -63,4 +63,21 @@ button:hover {
   background-color: #007bff;
   color: #fff;
 }
+/* Estilos para la caja de letras */
+.letter-box {
+  margin-top: 10px;
+  text-align: center; /* Centrar los botones horizontalmente */
+}
+
+/* Estilos para los botones de letras */
+.letter-button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  display: inline-block; /* Mostrar en una fila horizontal */
+}
 
