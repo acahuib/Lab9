@@ -1,0 +1,66 @@
+/* Estilos para el contenedor principal del juego */
+.game-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título del juego */
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+/* Estilos para los mensajes de victoria y derrota */
+.message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para los botones */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la caja de juego */
+.game-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las letras adivinadas */
+.guessed-letters {
+  margin-top: 10px;
+}
+
+/* Estilos para los botones de letras */
+.letter-button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.letter-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
