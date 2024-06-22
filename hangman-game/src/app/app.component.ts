@@ -45,8 +45,10 @@ export class AppComponent {
   }
 
   isGameWon(): boolean {
-    return this.getDisplayedWord() === this.wordToGuess;
+  return this.wordToGuess.split('').every(letter => this.isLetterGuessed(letter));
   }
+
+
 
   isGameLost(): boolean {
     return this.attemptsLeft === 0;
